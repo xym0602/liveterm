@@ -11,7 +11,7 @@ export const help = async (args: string[]): Promise<string> => {
     if (i % 7 === 0) {
       c += Object.keys(bin).sort()[i - 1] + '\n';
     } else {
-      c += Object.keys(bin).sort()[i - 1] + ' ';
+      c += Object.keys(bin).sort()[i - 1] + '  ';
     }
   }
   return `Welcome! Here are all the available commands:
@@ -153,5 +153,14 @@ export const banner = (args?: string[]): string => {
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.
 Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
+Type 'blog' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.blog}" target="_blank">here</a></u> for the personal blog.
 `;
+};
+
+
+// test
+
+export const blog = async (args: string[]): Promise<string> => {
+  window.open(`https://blog.xn--4gq986klnp.cn`);
+  return "Opening Melo's blog";
 };

@@ -1,8 +1,8 @@
 {
-  "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
+  "readmeUrl": "https://raw.githubusercontent.com/xym0602/xym0602/main/README.md",
   "title": "Melo LiveTerm",
   "name": "Melo",
-  "ascii": "testascii",
+  "ascii": "cveinnt",
   "social": {
     "github": "github",
     "linkedin": "linkedin"
@@ -35,5 +35,8 @@
       "blue": "#EBCB8B",
       "red": "#BF616A"
     }
-  }
+  },
+  
+  "blog": "https://blog.xn--4gq986klnp.cn"
+
 }
