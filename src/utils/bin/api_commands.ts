@@ -31,6 +31,7 @@ export const weather = async (args: string[]): Promise<string> => {
   if (!city) {
     return 'Usage: weather [city]. Example: weather casablanca';
   }
+  return `Pleas wait a moment \n`
   const weather = await getWeather(city);
   return weather;
 };
