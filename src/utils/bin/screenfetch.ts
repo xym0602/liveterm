@@ -11,9 +11,9 @@ const screenfetch = async (args: string[]): Promise<string> => {
     \ @@    @@@@@@@@ /                        <u><a href="${config.resume_url}" target="_blank">resume</a></u>
    __\____   ____.' /                        爵 <u><a href="${config.repo}" target="_blank">Github repo</a></u>
   /   \  \\___\\__ '                          -----------
-  \___/__/ o  o  '/¯¯\                        CONTACT 
-   /¯¯\       __ /   /                       <u><a href="mailto:${config.email}" target="_blank">${config.email}</a></u>
-  /   /   .-'¯  ¯\__/                        <u><a href="https://github.com/${config.social.github}" target="_blank">github.com/${config.social.github}</a></u>
+  \___/__/ o  o  '/¯¯\                         CONTACT 
+   /¯¯\       __ /   /                        <u><a href="mailto:${config.email}" target="_blank">${config.email}</a></u>
+  /   /   .-'¯  ¯\__/                         <u><a href="https://github.com/${config.social.github}" target="_blank">github.com/${config.social.github}</a></u>
   \__/-.-'                                  
       `;
       
