@@ -6,12 +6,12 @@ const screenfetch = async (args: string[]): Promise<string> => {
         _____       ____                     screenfetch: summary
       .\'     \'.__  |    |                   -----------
     @@@@         \'. |¯¯|                     ABOUT
-  .-.@@¯¯¯|¯|¯¯¯¯¯\|  |                      ${config.name}
+  .-.@@¯¯¯|¯|¯¯¯¯¯\|  |                       ${config.name}
   \`-\` @@  '-'@     )  /                     ﰩ ${config.ps1_hostname}
-    \ @@    @@@@@@@@ /                       <u><a href="${config.resume_url}" target="_blank">resume</a></u>
-   __\____   ____.' /                       爵 <u><a href="${config.repo}" target="_blank">Github repo</a></u>
-  /   \  \\___\\__ '                        -----------
-  \___/__/ o  o  '/¯¯\                       CONTACT 
+    \ @@    @@@@@@@@ /                        <u><a href="${config.resume_url}" target="_blank">resume</a></u>
+   __\____   ____.' /                        爵 <u><a href="${config.repo}" target="_blank">Github repo</a></u>
+  /   \  \\___\\__ '                          -----------
+  \___/__/ o  o  '/¯¯\                        CONTACT 
    /¯¯\       __ /   /                       <u><a href="mailto:${config.email}" target="_blank">${config.email}</a></u>
   /   /   .-'¯  ¯\__/                        <u><a href="https://github.com/${config.social.github}" target="_blank">github.com/${config.social.github}</a></u>
   \__/-.-'                                  
