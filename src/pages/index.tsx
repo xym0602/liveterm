@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import React from 'react';
-import config from '../../config.json';
 import { Input } from '../components/input';
 import { useHistory } from '../components/history/hook';
 import { History } from '../components/history/History';
@@ -38,10 +37,11 @@ const IndexPage: React.FC<IndexPageProps> = ({ inputRef }) => {
   return (
     <>
       <Head>
-        <title>{config.title}</title>
+        <title>Melo&apos;s Home</title>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </Head>
 
-      <div className="p-8 overflow-hidden h-full border-2 rounded border-light-yellow dark:border-dark-yellow">
+      <div className="p-2 sm:p-4 lg:p-8 overflow-hidden h-full border-2 rounded border-light-yellow dark:border-dark-yellow">
         <div ref={containerRef} className="overflow-y-auto h-full">
           <History history={history} />
 
