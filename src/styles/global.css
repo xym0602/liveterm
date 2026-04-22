@@ -39,3 +39,130 @@ div#__next > div {
 ::-webkit-scrollbar-thumb:hover {
   background: #ff8037;
 }
+
+/* ASCII art scaling for mobile */
+.ascii-art {
+  font-size: 0.5em;
+  line-height: 1.1;
+  white-space: pre;
+}
+
+@media (min-width: 480px) {
+  .ascii-art {
+    font-size: 0.7em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ascii-art {
+    font-size: 1em;
+    line-height: normal;
+  }
+}
+
+/* Matrix effect - green falling characters */
+.matrix-container {
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  background: #000;
+  min-height: 200px;
+}
+
+.matrix-line {
+  color: #0f0;
+  font-size: 14px;
+  white-space: pre;
+  animation: matrix-fall 2s linear infinite;
+  opacity: 0.8;
+}
+
+.matrix-line:nth-child(odd) {
+  animation-delay: 0.5s;
+  color: #0a0;
+}
+
+.matrix-line:nth-child(3n) {
+  animation-delay: 1s;
+  color: #0d0;
+}
+
+@keyframes matrix-fall {
+  0% { opacity: 1; transform: translateY(0); }
+  50% { opacity: 0.5; }
+  100% { opacity: 0.8; transform: translateY(10px); }
+}
+
+/* Hack effect - flashing code */
+.hack-container {
+  background: #0a0a0a;
+  padding: 10px;
+  animation: hack-flash 0.1s infinite;
+}
+
+.hack-line {
+  color: #0f0;
+  font-size: 12px;
+  animation: hack-appear 0.05s ease-out;
+}
+
+.hack-line.success {
+  color: #ff0;
+}
+
+.hack-line.warning {
+  color: #f80;
+}
+
+@keyframes hack-flash {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.95; }
+}
+
+@keyframes hack-appear {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Panic effect - red error cascade */
+.panic-container {
+  background: #1a0000;
+  padding: 10px;
+  animation: panic-shake 0.05s infinite;
+}
+
+.panic-line {
+  color: #f00;
+  font-size: 12px;
+  animation: panic-flash 0.2s infinite;
+}
+
+.panic-line:nth-child(odd) {
+  animation-delay: 0.1s;
+}
+
+.panic-line.critical {
+  color: #ff0;
+  font-weight: bold;
+  animation: panic-flash 0.1s infinite;
+}
+
+@keyframes panic-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-1px); }
+  75% { transform: translateX(1px); }
+}
+
+@keyframes panic-flash {
+  0%, 100% { opacity: 1; }
+   50% { opacity: 0.3; }
+}
+
+/* Exit hint styling */
+.exit-hint {
+  color: #888;
+  font-size: 11px;
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px dashed #666;
+}
